@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="stylesheet.css" rel="stylesheet" />
+    <script src="script.js"></script>
+    <title>Diva Trucking Federation</title>
+    
+</head>
+<body>
+    <div class="sizer">
+        <div class="contract-box"><!-- Write your comments here -->
+            <span class="title">DIVA Trucking Federation</span>
+            <select class="dest" id="dest" onchange="onResetChange()"><!-- Write your comments here -->
+                <option class="dest-option" id="reg" value="950">Jita/Perimeter &#8703 T0DT-T (1,150 isk/m3)</option>
+                <option class="dest-option" id="max" value="300000000">Max Freight Jita &#8703 T0DT-T (300M)</option>
+                <option class="dest-option" id="max" value="300000000">Max Freight Jita &#8703 NEU-UD (300M)</option>
+                <option class="dest-option" id="max" value="300000000">Max Freight Jita &#8703 Irmalin (300M)</option>
+                <option class="dest-option" id="reg" value="1100">Jita/Perimeter &#8703 NEU-UD (1,100 isk/m3)</option>
+                <option class="dest-option" id="reg" value="1050">Jita/Perimeter &#8703 A24L-V (1,050 isk/m3)</option>
+                <option class="dest-option" id="reg" value="800">Jita/Perimeter &#8703 Gademam (800 isk/m3</option>
+                <option class="dest-option" id="reg" value="800">Jita/Perimeter &#8703 Nomash (800 isk/m3)</option>
+                <option class="dest-option" id="reg" value="950">Jita/Perimeter &#8703 Irmalin (950 isk/m3</option>
+                <option class="dest-option" id="reg" value="1550">Amarr &#8703 T0DT-T (1550 isk/m3)</option>
+            </select>
+            <div class="input-container">
+                <label class="item-label">Contract Size:</label>	
+                <input class="wrtie-box" id="size" onClick="this.select()" 
+                onchange="onChange()" max="300000" type="number" onkeyup="onChange()"/>
+                <label class="short-hand" id="short-hand-size" value=""></label>
+                <label class="info">Max Mass<br>300k m3</label>
+            </div>	
+            <div class="input-container">	
+                <label class="item-label">Collateral:</label>	
+                <input class="wrtie-box" id="coll" onClick="this.select()" 
+                onchange="onChange()" type="number" onkeyup="onChange()"/>
+                <label class="short-hand" id="short-hand-coll" value=""></label>
+                <label class="info">Max Collateral<br>25 Billion</label>
+            </div>
+            <div class="cost">
+                <label class="statement">cost: </label>
+                <div class="numbers">
+
+                    <input class="number-plain" id="cost" onClick="this.select()" 
+                    onchange="onChange()" onkeyup="onChange()"></input>
+                    <label class="number-commas" id="short-hand-cost" value=""></label>
+                    <label class="info">Min<br>25M</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <label >instructions</label>
+            <p class="written-instructions">
+                <strong>Step 1.</strong> Copy & Paste the totals you get after using the Freight Calculator above. <br>
+                <strong>Step 2.</strong> Creating a private contract to "<strong>Kuwait isn't a real deployment</strong>" <br>
+                <strong>Step 3.</strong> Last make sure before you finish contract double check everything.
+            </p>
+            <div class="instruction-phots">
+                <div class="img-box">
+                    <img src="1-4-4.jpg" alt="courier contract 1/4" class="img">
+                </div>
+                <div class="img-box">
+                    <img src="4-4-3.png" alt="courier contract 4/4"  class="img">
+                </div>
+            </div>
+        </div>
+        <div class="procurement">
+            <span class="procurement-info">
+                Would you like us to get items for you?
+                <br>
+                For fast and easy procurement send us a
+                <br>
+                eve praisal of what you want. We
+                <br>
+                charge 105% Jita sell + normal freight 
+            </span>
+        </div>
+
+        <div class="extra-help">
+
+            <a href="https://di-va.space/" target="_blank" class="diva-space"><img src="diva.jpg" alt="DIVA.space" style="width:117px;height:44px;"></a> 
+            <br>
+            <br>
+            <a href="https://discord.gg/t6k2pvuAnD"  target="_blank"><img src="discord.png" alt="Join our discord" style="width:117px;height:44px;"></a>
+
+        </div>
+    </div>
+</body>
+</html>
+
